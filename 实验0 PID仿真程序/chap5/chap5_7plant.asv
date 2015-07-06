@@ -1,0 +1,20 @@
+function dx=Plant(t,x,flag,para)
+dx=zeros(2,1);
+
+ut=para(1);
+
+dt=15*sign(x(2));
+b=100;
+fx=-25*x(2)-dt;
+
+dx(1)=x(2);
+dx(2)=fx+b*ut;
+
+
+///
+J=10;
+ut=para(1);
+
+d=3.0*sin(t);
+dx(1)=x(2);
+dx(2)=1/J*(ut-d);

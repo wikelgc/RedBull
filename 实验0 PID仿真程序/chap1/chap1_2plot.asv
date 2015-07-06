@@ -1,0 +1,11 @@
+close all;
+
+plot(t,yd,'k',t,y,'k');
+xlabel('time(s)');
+ylabel('yd,y');
+
+
+
+plot(t,x(:,1),'k',t,x(:,4),'k:','linewidth',2);
+xlabel('time(s)');ylabel('x1 and x1 estimate');
+legend('angle practical value','angle estimated value');
